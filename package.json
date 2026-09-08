@@ -15,5 +15,10 @@
     "typescript": "^5.5.2",
     "vitest": "~4.1.0",
     "wrangler": "^4.129.1"
+  },
+  "dependencies": {
+    "@google/genai": "^2.21.0",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.5.4"
   }
 }

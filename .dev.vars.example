@@ -1,0 +1,13 @@
+# Copy to .dev.vars for `wrangler dev`. Both values are secrets in production:
+#   npx wrangler secret put GEMINI_API_KEY
+#   npx wrangler secret put SUPABASE_SERVICE_KEY
+
+GEMINI_API_KEY=""
+
+# Supabase project "spark-post-mcp" > Project Settings > API keys > service_role.
+# Bypasses RLS, so it must stay server-side only.
+SUPABASE_SERVICE_KEY=""
+
+# Only needed locally if you want to point at a different project than the
+# SUPABASE_URL var in wrangler.jsonc.
+# SUPABASE_URL="https://cfgvhafhcavgrgrznlco.supabase.co"

@@ -7,10 +7,22 @@
 	"name": "spark-post-mcp",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-09-07",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
 	"observability": {
 		"enabled": true
 	},
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	/**
+	 * The Supabase project URL is public, so it lives here. The keys are secrets:
+	 *   npx wrangler secret put GEMINI_API_KEY
+	 *   npx wrangler secret put SUPABASE_SERVICE_KEY
+	 */
+	"vars": {
+		"SUPABASE_URL": "https://cfgvhafhcavgrgrznlco.supabase.co",
+		"GEMINI_MODEL": "gemini-3.6-flash"
+	}
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
